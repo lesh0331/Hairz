@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src='main.js'></script>
+    <!-- https://blog.tommyzip.co.kr/code/html5-tags-and-basic-structure/ https://hairzzang.tistory.com/55-->
+</head>
+<body>
+    <header>
+        <div class="logo"><h1>Hairz</h1></div>
+        <div class="content">
+            <div class="user_info"><span id="user_name">***님이 로그인 하셨습니다.</span></div>
+            <div class="main_menu">
+                <a href="#"><li>영업</li></a>
+                <a href="#"><li>제품</li></a>
+                <a href="#"><li>예약</li></a>
+                <a href="#"><li>직원</li></a>
+                <a href="#"><li>마케팅</li></a>
+                <a href="#"><li>내역</li></a>
+                <a href="#"><li>결산</li></a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="search_customer">
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;고객검색&nbsp;&nbsp;</span>
+            <select name="cus-type" id="cus-search">
+                <option value="cus-Tel">휴대폰번호</option>
+                <option value="cus-Name">이름</option>
+                <option value="cus-Number">고객번호</option>
+            </select>
+            &nbsp;&nbsp;<input type="text" id="cus-search-text">&nbsp;&nbsp;<input type="submit" id="cus-submit" value="검색">
+        </div>
+    </nav>
+    <aside>
+        <div class="info_customer">
+            <div id="register_customer_header"><span>고객 간편등록</span></div>
+            <div id="register_customer_body">
+                <div class="input-container">
+                    <span>고객명</span>&nbsp;<input type="text" id="cus-register-name">
+                    <select name="cus-gender" id="cus-gender">
+                        <option value="cus-Male">남</option>
+                        <option value="cus-Female">여</option>
+                    </select>
+                </div>
+                <br>
+                <div class="input-container">
+                    <span>휴대폰</span>&nbsp;<input type="tel" id="cus-register-tel">
+                </div>
+            </div>
+        </div>
+    </aside>
+    <article>
+        <div class="container">
+            <span>메인</span><br>
+            <span>메인</span><br>
+            <span>메인</span><br>
+            <span>메인</span><br> 
+            <span>메인</span>
+        </div>
+    </article>
+</body>
+</html>
