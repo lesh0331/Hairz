@@ -18,6 +18,10 @@
        line-height: 1.6;
        margin: 0;
        padding: 0;
+       -webkit-user-select:none;
+       -moz-user-select:none;
+       -ms-user-select:none;
+       user-select:none
    }
 
    header {
@@ -100,9 +104,9 @@
        flex: 2;
        height: 600px;
        padding-top: 70px;
-       background-image: url('image/content2.png');
+       background-image: url('views\image\content2.png');
        background-repeat: no-repeat;
-       background-position: center;
+       background-position: center; 
        background-size: cover
    }
    .content_2 {

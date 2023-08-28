@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hairz | Register</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='register.css'>
+    <script src='main.js'></script>
+</head>
+
+</style>
+<body>
+    <div class="wrapper">
+    <div class="main-signup">
+        <!--웹페이지 상단-->
+
+        <!--회원가입 부분-->
+        <section class="signup-wrap">
+            <h2>회원정보</h2>
+            <div>
+                <!--아이디,비번,비번재확인-->
+                <h3>아이디</h3>
+                <span class="signup-input">
+                    <input id="signup-id" type="text" placeholder="영 소문자, 숫자를 사용해 4~20자 이내로 입력해주세요." 
+                    pattern="[a-z0-9]{4,20}" title="영 소문자, 숫자를 사용해 4~20자 이내로 입력해주세요." required></input>
+                </span>
+
+                <h3>비밀번호</h3>
+                <span class="signup-input">
+                    <input id="signup-pw" type="text" placeholder="영문+숫자+특수문자 8 ~ 14자 이내로 입력해주세요."
+                    pattern="^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,14}$"
+                    title="영문+숫자+특수문자 8 ~ 14자 이내로 입력해주세요." required></input>
+                    <span class="pw-lock"></span>
+                </span>
+
+                <h3>비밀번호 재확인</h3>
+                <span class="signup-input">
+                    <input id="signup-pww" type="text"></input>
+                    <span class="pww-lock"></span>
+                </span>
+
+                <h3>이름</h3>
+                <span class="signup-input">
+                    <input id="signup-name" type="text"></input>
+                    <span class="pww-lock"></span>
+                </span>
+
+            </div>
+
+            <div style="margin-top: 35px;">
+                <!--휴대전화-->
+                <h3>휴대폰 인증</h3>
+                
+                <div style="display: flex;">
+                    <span class="signup-input" style="width:100%; margin: 10px 0px 0px 0px">
+                        <input id="signup-phone" type="text" placeholder="전화번호 입력"></input>
+                    </span>
+                    <span class="cnum-btn-wrap">
+                        <button id="cnum-btn">인증번호 받기</button>
+                    </span>
+                </div>
+                
+                <span class="signup-input-c" style="margin-top: 10px;">
+                    <input id="signup-cnum" type="text" placeholder="인증번호 입력하세요"></input>
+                </span>
+            </div>
+
+            <div>
+                <!--가입하기-->
+                <div class="signup-btn-wrap">
+                    <button id="signup-btn">완료</button>
+                </div>
+            </div>
+            <div class="copyright-wrap" style="font-size: 12px;">
+                <span>이용약관 | 개인정보처리방침 | 책임의 한계와 고지 | 회원정보 고객센터</span>
+            </div>
+        </section>
+     
+        <footer>
+
+        </footer>
+
+    </div>
+</div>
+</body>
+</html>

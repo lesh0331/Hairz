@@ -1,0 +1,27 @@
+{
+  "name": "webproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "bin": {
+    "webproject" : "www.js"
+  },
+  "scripts": {
+    "start": "node ./bin/www.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesh0331/Hairz.git"
+  },
+  "author": "sunghyeon lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lesh0331/Hairz/issues"
+  },
+  "homepage": "https://github.com/lesh0331/Hairz#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}

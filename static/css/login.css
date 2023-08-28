@@ -20,6 +20,10 @@ body {
     align-items: center;
     height: 100vh; /* 화면 높이를 기준으로 세로 중앙 정렬 */
     background-color: #fafafa;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
 }
 
 .login-wrapper {

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src='main.js'></script>
+    <!-- https://blog.tommyzip.co.kr/code/html5-tags-and-basic-structure/ https://hairzzang.tistory.com/55-->
+</head>
+<body>
+    <header>
+        <div class="logo"><h1>Hairz</h1></div>
+        <div class="content">
+            <div class="user-info"><span id="user-name">***님이 로그인 하셨습니다.</span></div>
+            <div class="main-menu">
+                <a href="#"><li>영업</li></a>
+                <a href="#"><li>고객</li></a>
+                <a href="#"><li>예약</li></a>
+                <a href="#"><li>직원</li></a>
+                <a href="#"><li>마케팅</li></a>
+                <a href="#"><li>내역</li></a>
+                <a href="#"><li>결산</li></a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="search-customer">
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;고객검색&nbsp;&nbsp;</span>
+            <select name="cus-type" id="cus-search">
+                <option value="cus-Tel">휴대폰번호</option>
+                <option value="cus-Name">이름</option>
+                <option value="cus-Number">고객번호</option>
+            </select>
+            &nbsp;&nbsp;<input type="text" id="cus-search-text">&nbsp;&nbsp;<input type="submit" id="cus-submit" value="검색">
+        </div>
+    </nav>
+    <aside>
+        <div class="info-customer">
+            <div id="register-customer">
+                <div id="register-customer-header">
+                    <img src="image/add-cus.png" alt="">
+                    <span>고객 간편등록</span>
+                </div>
+                <div id="register-customer-body">
+                    <div class="input-container">
+                        <span>고객명</span>&nbsp;<input type="text" id="cus-register-name">
+                        <select name="cus-gender" id="cus-gender">
+                            <option value="cus-Male">남</option>
+                            <option value="cus-Female">여</option>
+                        </select><br>
+                        <span>휴대폰</span>&nbsp;<input type="tel" id="cus-register-tel"><br>
+                        <span>담당자</span>&nbsp;<select name="hair-dresser-select" id="hair-dresser">
+                            <option value="basic-select">선택하세요.</option>
+                            <option value="hair-dresser-name">***</option>
+                            <option value="hair-dresser-name">***</option>
+                            <option value="hair-dresser-name">***</option>
+                        </select>
+                    </div>
+                    <div id="register-customer-footer"> 
+                    <div class="standby-regi-cus">
+                        <img src="image/clock2.png">
+                        <span>등록후 대기</span>
+                    </div>
+                    <div class="standby-regi-cus">
+                        <img src="image/scissors.png">
+                        <span>등록후 커트</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="standby-customer">
+                <div id="standby-cus-status-header">
+                    <img src="image/sand-clock.png" alt="">
+                    <span>고객 대기현황</span><br>
+                </div>
+                <div class="cus-status">
+                    <li>시간</li>
+                    <li>고객명</li>
+                    <li>담당자</li>
+                    <li>상태</li>
+                </div>
+                <div id="standby-cus-status-body">
+                    <img src="image/hourglass2.png">
+                    <span>목록이 없습니다.</span>
+                </div>
+            </div>
+            <div id="reservation-customer">
+                <div id="reserve-customer-header">
+                    <img src="image/clock.png" alt="">
+                    <span>고객 대기현황</span><br>
+                </div>
+                <div class="cus-status">
+                    <li>시간</li>
+                    <li>고객명</li>
+                    <li>담당자</li>
+                    <li>상태</li>
+                </div>
+                <div id="reserve-customer-body">
+                    <img src="image/hourglass2.png">
+                    <span>목록이 없습니다.</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <article>
+        <div class="container">
+            <div id="left-content">
+                <span>매장현황</span>
+                <div id="store-status">
+                    <div class="store-status-box">
+                        <div id="visit-status">
+                            <img src="image/user.png" alt="">
+                            <span>방문현황</span>
+                        </div>
+                            <div class="before-wrap">
+                                <div class="before-day">
+                                    <span class="before-percent-one">00.0%</span>
+                                    <span class="before-text">전일대비</span>
+                                </div>
+                                <div class="before-month">
+                                    <span class="before-percent-one">00.0%</span>
+                                    <span class="before-text">전월기간대비</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="store-status-box">
+                        <div id="sales-status">
+                            <img src="image/money.png" alt="">
+                            <span>매출</span>
+                        </div>
+                            <div class="before-wrap">
+                                <div class="before-day">
+                                    <span class="before-percent-two">00.0%</span>
+                                    <span class="before-text">전일대비</span>
+                                </div>
+                                <div class="before-month">
+                                    <span class="before-percent-two">00.0%</span>
+                                    <span class="before-text">전월기간대비</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="store-status-box">
+                        <div id="payment-status">
+                            <img src="image/wallet.png">
+                            <span>선불/회원권</span>
+                        </div>
+                            <div class="before-wrap">
+                                <div class="before-day">
+                                    <span class="before-percent-three">00.0%</span>
+                                    <span class="before-text">전일대비</span>
+                                </div>
+                                <div class="before-month">
+                                    <span class="before-percent-three">00.0%</span>
+                                    <span class="before-text">전월기간대비</span>
+                                </div>
+                            </div>
+                    </div>
+                </div><br>
+                <span>방문동향</span>
+                <div id="visit-trands">
+                    <div class="visit-trands-box">
+                        <span class="visit-trands-text">신규</span><br>
+                        <span class="visit-trands-number">0</span>
+                    </div>
+                    <div class="visit-trands-box">
+                        <span class="visit-trands-text">소개</span><br>
+                        <span class="visit-trands-number">0</span>
+                    </div>
+                    <div class="visit-trands-box">
+                        <span class="visit-trands-text">지명</span><br>
+                        <span class="visit-trands-number">0</span>
+                    </div>
+                    <div class="visit-trands-box">
+                        <span class="visit-trands-text">대체</span><br>
+                        <span class="visit-trands-number">0</span>
+                    </div>
+                    <div class="visit-trands-box">
+                        <span class="visit-trands-text">손님</span><br>
+                        <span class="visit-trands-number">0</span>
+                    </div>
+                    <div class="visit-trands-box">
+                        <span class="visit-trands-text">합계</span><br>
+                        <span class="visit-trands-number">0</span>
+                    </div>
+                </div>
+            </div>
+            <div id="center-content">
+                <div id="today-status">
+                    <span>TODAY</span>
+                    <div id="visit-customer-wrap">
+                        <div class="visit-customer-header">
+                            <div class="visit-customer selected" id="day-customer"><span>요일별방문고객</span></div>
+                            <div class="visit-customer" id="month-customer"><span>월별방문고객</span></div>
+                        </div>
+                            <div class="visit-customer-body">
+                                <div id="visit-customer-graph">
+
+                                </div>
+                            </div>
+                    </div>
+                </div><br>
+                <div id="monthly-issue">
+                    <span>이달의 이슈</span>
+                    <div id="monthly-issue-wrap">
+                        <div class="monthly-issue-box">
+                            <div class="monthly-issue-header">
+                                <span>생일 고객</span>
+                            </div>
+                            <div class="monthly-issue-body">
+                                <span>·금일&nbsp;: &emsp;&emsp;&nbsp;명</span>
+                                <span>·명일&nbsp;: &emsp;&emsp;&nbsp;명</span>
+                            </div>
+                        </div>
+                        <div class="monthly-issue-box">
+                            <div class="monthly-issue-header">
+                                <span>문자 발송</span>
+                            </div>
+                            <div class="monthly-issue-body">
+                                <span>·자동&nbsp;: &emsp;&emsp;&nbsp;명</span>
+                                <span>·수동&nbsp;: &emsp;&emsp;&nbsp;명</span>
+                            </div>
+                        </div>
+                        <div class="monthly-issue-box">
+                            <div class="monthly-issue-header">
+                                <span>예약 현황</span>
+                            </div>
+                            <div class="monthly-issue-body">
+                                <span>·예약&nbsp;: &emsp;&emsp;&nbsp;명</span>
+                                <span>·취소&nbsp;: &emsp;&emsp;&nbsp;명</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right-content">
+                <div>공지사항</div>
+                <div>커뮤니티</div>
+            </div>
+        </div>
+    </article>
+    
+</body>
+
+</html>
